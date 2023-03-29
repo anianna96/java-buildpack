@@ -40,8 +40,8 @@ module JavaBuildpack
 
       # (see JavaBuildpack::Component::BaseComponent#release)
       def release
-      #  super
-      #  @droplet.java_opts.add_preformatted_options '-XX:+ExitOnOutOfMemoryError'
+        super
+        @droplet.java_opts.add_preformatted_options '-XX:+ExitOnOutOfMemoryError'
       end
     end
   end
